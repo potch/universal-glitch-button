@@ -24,7 +24,7 @@ app.get('/extension', function(request, response) {
   let manifest = require('./extension/manifest.json');
   let version = manifest.version;
   let name = manifest.name.toLowerCase().replace(/[^0-9a-z_-]+/g, '_');
-  let fileName = `${name}-${version}.zip`;
+  let fileName = `${name}-${version}-an+fx.xpi`;
   response.redirect('/' + fileName);
 });
 
