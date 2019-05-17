@@ -18,8 +18,6 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
-
-
 app.get('/extension', function(request, response) {
   let manifest = require('./extension/manifest.json');
   let version = manifest.version;
