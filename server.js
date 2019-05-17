@@ -11,23 +11,21 @@ const { join } = require('path');
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
+app.use(express.static('web-ext-artifacts'));
 
 // http://expressjs.com/en/starter/basic-routing.html
 app.get('/', function(request, response) {
   response.sendFile(__dirname + '/views/index.html');
 });
 
+
+
 app.get('/extension', function(request, response) {
   let manifest = require('./extension/manifest.json');
   let version = manifest.version;
   let name = manifest.name.toLowerCase().replace(/[^0-9a-z_-]+/g, '_');
   let fileName = `${name}-${version}.zip`;
-  let path = join('.','web-ext-artifacts');
-  if (fs.existsSync(path)) {
-  } else {
-    response.status(404);
-    response.end('no artifact path found, try running build?');
-  }
+  response.redirect('/' + fileName);
 });
 
 // listen for requests :)
