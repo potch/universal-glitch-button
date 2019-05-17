@@ -1,3 +1,3 @@
-browser.browserAction.onClicked.addListener(function(tab) {
-  browser.tabs.executeScript(tab.id, {file: "bookmarklet.js"})
+chrome.browserAction.onClicked.addListener(function(tab) {
+  chrome.tabs.executeScript(tab.id, {file: "bookmarklet.js"})
 });
