@@ -1,0 +1,12 @@
+{
+  "addons": {
+    "glitch-app-to-project@glitch.com": {
+      "updates": [
+        {
+          "version": "1.0",
+          "update_link" : "https://broad-flare.glitch.me/glitch_app_to_project-1.0-an+fx.xpi"
+        }
+      ]
+    }
+  }
+}

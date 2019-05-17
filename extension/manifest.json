@@ -6,7 +6,8 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "glitch-app-to-project@glitch.com"
+      "id": "glitch-app-to-project@glitch.com",
+      "update_url": "https://broad-flare.glitch.me/updates.json"
     }
   },
   "name": "Glitch App to Project",
