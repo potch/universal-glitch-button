@@ -8,7 +8,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "web-ext build -s extension"
+    "build": "./buildextension.sh"
   },
   "dependencies": {
     "express": "^4.16.4",
