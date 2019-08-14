@@ -1,0 +1,184 @@
+/* adapted from glitch button css */
+
+body {
+  font-family:Helvetica,Arial,sans-serif;
+  font-size:14px;
+  background:#fff;
+  color:#000;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.msg {
+  padding: 1em;
+  text-align: center;
+}
+
+.buttonLinks {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color:#fff;
+  border:2px solid #000;
+  border-radius:5px;
+  font-size:14px;
+  font-weight:bold;
+  display:inline-block;
+  padding:7px 36px 5px 10px;
+  text-decoration:none;
+  color:#000;
+  margin:5px 0;
+  background-position:right 8px center;
+  background-repeat:no-repeat;
+  background-size:20px 20px;
+}
+
+.buttonLinks:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.buttonLinks.viewCode {
+  background-image: url(https://glitch.com/edit/images/emojis/carp_streamer.png);
+}
+
+.buttonLinks.remix {
+  background-image: url(https://glitch.com/edit/images/emojis/microphone.png);
+}
+
+.buttonLinks.embed {
+  background-image: url(https://glitch.com/edit/images/emojis/bento.png);
+}
+
+.project .projectInfo{
+  padding: 15px;
+  border-bottom: 1px solid #9b9b9b;
+}
+
+.project .projectActions{
+  background: white;
+  padding: 15px;
+}
+
+.project .projectEmbed{
+  padding: 15px;
+  width: 600px;
+}
+
+.project .name {
+  font-size:18px;
+  font-weight:bold;
+}
+
+.project .description {
+  font-size:14px;
+}
+
+.project .project-actions {
+  margin-top:10px;
+  padding: 15px;
+}
+
+.tooltip.border {
+  position:absolute;
+  top:-11px;
+  right:55px;
+  width:0;
+  height:0;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-bottom: 10px solid #000;
+}
+
+.tooltip.fill {
+  position:absolute;
+  top:-8px;
+  right:55px;
+  width:0;
+  height:0;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+.users ul {
+  padding: 0;
+  margin: 0;
+}
+    
+.users ul li {
+  list-style: none;
+  margin: 5px 0;
+}
+
+.users ul li a {
+  text-decoration: none;
+}
+
+.users ul li img{
+  border-radius: 50%;
+}
+    
+.users .name { 
+  font-size: 14px;
+  vertical-align: top;
+  line-height: 1.8em;
+}
+
+.glitchOpenWindowElement .projectActions label {
+  display: block;
+  margin: 1em 0;
+  line-height: 1.5em;
+}
+
+.glitchOpenWindowElement .projectEmbed textarea {
+  display: block;
+  border-radius: 3px;
+  border: 1px solid rgb(195, 195, 195);
+  height: 205px;
+  margin: 1em 0;
+  width: 100%; 
+  padding: .5em; 
+  font-size: 1em; 
+  background: #efefef;
+  font-family: 'Benton Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.5em;
+}
+
+.glitchOpenWindowElement .projectActions .embedGlitchCode {
+  display: none; 
+}
+
+/* custom positions */
+.glitchButton.position-x-right .glitchOpenWindowElement {
+  right: inherit;
+  left: -15px;
+}
+
+.glitchButton.position-x-right .glitchOpenWindowElement .tooltip {
+  right: inherit;
+  left: 3px;
+}
+
+.glitchButton.position-y-top .glitchOpenWindowElement {
+  top: inherit;
+  bottom: 110%;
+}
+
+.glitchButton.position-y-top .glitchOpenWindowElement .tooltip {
+  top: inherit;
+  bottom: -10px;
+  border-bottom: 0;
+  border-top: 9px solid black;
+}
+
+.glitchButton.position-y-top .glitchOpenWindowElement .tooltip.fill {
+  border-top: 10px solid white;
+  bottom: -8px;
+}
+
+.glitchButton.position-y-top .glitchButtonElement {
+  background-image: url(https://glitch.com/edit/images/background-light/icons/up-arrow.svg);
+}
+
+@media only screen and (max-width: 650px) {
+  .glitchOpenWindowElement .projectEmbed { width: 250px; }
+}
