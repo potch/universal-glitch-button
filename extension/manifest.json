@@ -4,6 +4,7 @@
     "default_title": "Glitch Project Info",
     "default_popup": "panel.html"
   },
+  "id": "glitch-app-to-project@glitch.com",
   "browser_specific_settings": {
     "gecko": {
       "id": "glitch-app-to-project@glitch.com",

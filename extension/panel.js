@@ -50,5 +50,7 @@ function glitchMenu (url) {
         </a>
       </section>
     </div>`;
+  }).catch(e => {
+    document.body.innerHTML = '<div class="msg">error getting info!</div>';
   });
 }

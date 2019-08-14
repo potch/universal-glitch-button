@@ -8,7 +8,8 @@ const fs = require('fs');
 const { join } = require('path');
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
-const versions = require('./public/updates.json').addons.updates;
+const addonId = require('./extension/manifest.json').id;
+const versions = require('./public/updates.json').addons[addonId].updates;
 
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
@@ -20,13 +21,9 @@ app.get('/', function(request, response) {
 });
 
 app.get('/extension', function(request, response) {
-  let latest = versions.slice(-1);
+  let latest = versions.slice(-1)[0];
   console.log(latest);
-  let manifest = require('./extension/manifest.json');
-  let version = manifest.version;
-  let name = manifest.name.toLowerCase().replace(/[^0-9a-z_-]+/g, '_');
-  let fileName = `${name}-${version}-an+fx.xpi`;
-  response.redirect('/' + fileName);
+  response.redirect(latest.update_link);
 });
 
 // listen for requests :)
