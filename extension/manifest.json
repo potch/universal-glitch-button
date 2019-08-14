@@ -12,13 +12,13 @@
   },
   "name": "Universal Glitch Button",
   "description": "View info about a glitch project",
-  "homepage_url": "https://app-to-project-extension.glitch.me",
+  "homepage_url": "https://broad-flare.glitch.me",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
   },
   "permissions": ["tabs", "http://*/*", "https://*/*"],
-  "version": "2.0",
+  "version": "2.1",
   "manifest_version": 2
 }
