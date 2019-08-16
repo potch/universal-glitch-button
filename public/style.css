@@ -20,10 +20,6 @@ h1 {
   font-weight: bold;
 }
 
-p {
-  max-width: 600px;
-}
-
 form {
   margin-bottom: 25px;
   padding: 15px;
@@ -72,7 +68,7 @@ footer {
 }
 
 .install {
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 a.button {
@@ -89,6 +85,7 @@ a.button {
   box-shadow: 0 .2em 0 rgba(48, 0, 48, .8);
 }
 a.button:hover {
+  background: #BA45BA;
   transform: translate(0px, -.1em);
   box-shadow: 0 .3em 0 rgba(48, 0, 48, .8);
 }
