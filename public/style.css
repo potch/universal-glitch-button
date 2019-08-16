@@ -69,3 +69,11 @@ footer {
   padding-top: 25px;
   border-top: 1px solid lightgrey;
 }
+
+a.button {
+  padding: .25em 2em .4em;
+  background: darkmagenta;
+  color: #fff;
+  border-radius: .25em;
+  box-shadow: 0 .25em 0 rgba(48, 0, 48, .8);
+}
