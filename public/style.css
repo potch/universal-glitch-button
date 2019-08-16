@@ -8,6 +8,7 @@
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
+  text-align: center;
 }
 
 h1 {
@@ -70,10 +71,28 @@ footer {
   border-top: 1px solid lightgrey;
 }
 
+.install {
+  margin-top: 1em;
+}
+
 a.button {
-  padding: .25em 2em .4em;
+  font-size: 1.5em;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  padding: .25em 2em .25em;
+  text-decoration: none;
+  min-width: 8em;
   background: darkmagenta;
   color: #fff;
   border-radius: .25em;
-  box-shadow: 0 .25em 0 rgba(48, 0, 48, .8);
+  box-shadow: 0 .2em 0 rgba(48, 0, 48, .8);
+}
+a.button:hover {
+  transform: translate(0px, -.1em);
+  box-shadow: 0 .3em 0 rgba(48, 0, 48, .8);
+}
+a.button:active {
+  transform: translate(0px, .1em);  
+  box-shadow: 0 .1em 0 rgba(48, 0, 48, .8);
 }
