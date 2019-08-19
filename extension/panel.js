@@ -7,6 +7,7 @@ function glitchMenu (url) {
   const urlObj = new URL(url);
 
   const editRE = /https:\/\/glitch.com\/edit\/#!\/([a-zA-Z0-9_-]+)\?/;
+  const projectPageRE = /https:\/\/glitch.com\/~([a-zA-Z0-9_-]+)/;
   
   let projectName;
   
@@ -14,6 +15,8 @@ function glitchMenu (url) {
     projectName = urlObj.hostname.split('.')[0];
   } else if (editRE.test(url)) {
     projectName = url.match(editRE)[1];
+  } else if (projectPageRE.test(url)) {
+    projectName = url.match(projectPageRE)[1];
   }
   
   if (!projectName) {
@@ -55,6 +58,9 @@ function glitchMenu (url) {
         </a><br>
         <a class="buttonLinks viewCode" href="https://glitch.com/edit/#!/${projectName}">
           View Source
+        </a>
+        <a class="buttonLinks show" href="https://glitch.com/edit/#!/${projectName}">
+          Show
         </a>
       </section>
     </div>`;

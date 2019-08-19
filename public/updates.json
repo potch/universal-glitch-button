@@ -7,8 +7,16 @@
           "update_link" : "https://universal-glitch-button.glitch.me/universal_glitch_button-3.0-an+fx.xpi"
         },
         {
-          "version": "3.2",
-          "update_link" : "https://universal-glitch-button.glitch.me/universal_glitch_button-3.2-an+fx.xpi"
+          "version": "3.2.1",
+          "update_link" : "https://universal-glitch-button.glitch.me/universal_glitch_button-3.2.1-an+fx.xpi"
+        },
+        {
+          "version": "3.3",
+          "update_link" : "https://universal-glitch-button.glitch.me/universal_glitch_button-3.3-an+fx.xpi"
+        },
+        {
+          "version": "3.4",
+          "update_link" : "https://universal-glitch-button.glitch.me/universal_glitch_button-3.4-an+fx.xpi"
         }
       ]
     }
