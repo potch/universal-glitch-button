@@ -4,22 +4,22 @@
     "default_title": "Glitch Project Info",
     "default_popup": "panel.html"
   },
-  "id": "glitch-app-to-project@glitch.com",
+  "id": "universal-glitch-button@glitch.com",
   "browser_specific_settings": {
     "gecko": {
-      "id": "glitch-app-to-project@glitch.com",
-      "update_url": "https://broad-flare.glitch.me/updates.json"
+      "id": "universal-glitch-button@glitch.com",
+      "update_url": "https://universal-glitch-button.glitch.me/updates.json"
     }
   },
   "name": "Universal Glitch Button",
   "description": "View info about a glitch project",
-  "homepage_url": "https://broad-flare.glitch.me",
+  "homepage_url": "https://universal-glitch-button.glitch.me",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
     "128": "icon.png"
   },
   "permissions": ["tabs", "http://*/*", "https://*/*"],
-  "version": "2.1",
+  "version": "3.0",
   "manifest_version": 2
 }

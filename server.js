@@ -9,6 +9,7 @@ const { join } = require('path');
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 const addonId = require('./extension/manifest.json').id;
+console.log(addonId);
 const versions = require('./public/updates.json').addons[addonId].updates;
 
 // http://expressjs.com/en/starter/static-files.html

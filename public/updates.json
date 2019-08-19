@@ -1,23 +1,11 @@
 {
   "addons": {
-    "glitch-app-to-project@glitch.com": {
+    "universal-glitch-button@glitch.com": {
       "updates": [
         {
-          "version": "1.0",
-          "update_link" : "https://broad-flare.glitch.me/glitch_app_to_project-1.0-an+fx.xpi"
-        },
-        {
-          "version": "1.1",
-          "update_link" : "https://broad-flare.glitch.me/glitch_app_to_project-1.1-an+fx.xpi"
-        },
-        {
-          "version": "2.0",
-          "update_link" : "https://broad-flare.glitch.me/glitch_app_to_project-2.0-an+fx.xpi"
-        },
-        {
-          "version": "2.1",
-          "update_link" : "https://broad-flare.glitch.me/glitch_app_to_project-2.1-an+fx.xpi"
-        }        
+          "version": "3.0",
+          "update_link" : "https://universal-glitch-button.glitch.me/universal_glitch_button-3.0-an+fx.xpi"
+        }
       ]
     }
   }

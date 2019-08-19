@@ -1,3 +1,3 @@
-# Glitch App to Project
+# Universal Glitch Button
 
-A Firefox port of https://glitch.com/~app-to-project-extension
+A Firefox Extension Inspired by <a href="https://glitch.com/~button">~button</a> and <a href="https://glitch.com/~app-to-project-extension">~app-to-project-extension</a>
