@@ -4,14 +4,22 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
 });
 
 function glitchMenu (url) {
-  url = new URL(url);
+  const urlObj = new URL(url);
 
-  if (!url.hostname.endsWith('.glitch.me')) {
-    document.body.innerHTML = '<div class="msg">not a glitch project!</div>';
-    return;
+  const editRE = /https:\/\/glitch.com\/edit\/#!\/([a-zA-Z0-9_-]+)\?/;
+  
+  let projectName;
+  
+  if (urlObj.hostname.endsWith('.glitch.me')) {
+    projectName = urlObj.hostname.split('.')[0];
+  } else if (editRE.test(url)) {
+    projectName = url.match(editRE)[1];
   }
-
-  const projectName = url.hostname.split('.')[0];
+  
+  if (!projectName) {
+    document.body.innerHTML = '<div class="msg">not a glitch project!</div>';
+    return;    
+  }
 
   fetch(`https://api.glitch.com/projects/${projectName}`)
   .then(r => r.json())
