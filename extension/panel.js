@@ -59,7 +59,7 @@ function glitchMenu (url) {
         <a class="buttonLinks viewCode" href="https://glitch.com/edit/#!/${projectName}">
           View Source
         </a>
-        <a class="buttonLinks show" href="https://glitch.com/edit/#!/${projectName}">
+        <a class="buttonLinks show" href="https://${projectName}.glitch.me/">
           Show
         </a>
       </section>
