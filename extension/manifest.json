@@ -7,8 +7,7 @@
   "id": "universal-glitch-button@glitch.com",
   "browser_specific_settings": {
     "gecko": {
-      "id": "universal-glitch-button@glitch.com",
-      "update_url": "https://universal-glitch-button.glitch.me/updates.json"
+      "id": "universal-glitch-button@glitch.com"
     }
   },
   "name": "Universal Glitch Button",
@@ -20,6 +19,6 @@
     "128": "icon.png"
   },
   "permissions": ["tabs", "http://*/*", "https://*/*"],
-  "version": "3.4.2",
+  "version": "3.5.0",
   "manifest_version": 2
 }
