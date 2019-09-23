@@ -14,11 +14,11 @@
   "description": "View info about a glitch project",
   "homepage_url": "https://universal-glitch-button.glitch.me",
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "icon-128.png",
+    "48": "icon-128.png",
+    "128": "icon-128.png"
   },
-  "permissions": ["tabs", "http://*/*", "https://*/*"],
-  "version": "3.5.0",
+  "permissions": ["activeTab", "http://*.glitch.me", "https://*.glitch.me", "https://glitch.com/*"],
+  "version": "3.6.0",
   "manifest_version": 2
 }

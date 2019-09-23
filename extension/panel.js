@@ -68,3 +68,15 @@ function glitchMenu (url) {
     document.body.innerHTML = '<div class="msg">error getting info!</div>';
   });
 }
+
+window.addEventListener('load', function () {
+  document.body.addEventListener('click', function (e) {
+    let tgt = e.target;
+    if (tgt.href) {
+      chrome.tabs.create({
+        url: tgt.href
+      });
+      return false;
+    }
+  });
+});
